@@ -131,6 +131,7 @@ main{
 }
 .credito-card{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .img-cc-conteudo{
@@ -237,7 +238,6 @@ footer{
     /* estilização produtos */
     .produtos{
         margin: auto;
-        margin
         width: 100vw;
         text-align: center;
         align-content: center;    
