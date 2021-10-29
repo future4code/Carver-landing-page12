@@ -22,17 +22,18 @@ nav{
     text-decoration: none;
 }
 
-main{
+/* main{
     display: flex;
     height: 88vh;
     width: 97vw;
-    justify-content: flex-end; 
-}
+    justify-content: center; 
+} */
 
-main img{
+/* main img{
+    display: flex;
     width: 98vw;
-    height: 89vh;
-}
+    height: 88vh;
+} */
 
 .pagina{
     display: flex;
@@ -44,6 +45,7 @@ main img{
     justify-content: center;
     align-items: center;
     gap: 70px;
+    margin-left: 27%;
 }
 
 .pagina  h1{
@@ -59,12 +61,6 @@ main img{
     height: 4em;
     width: 15rem;
     border-radius: 10px;
-}
-
-.parterosa{
-    background-color: pink;
-    height: 200px;
-    width: 200px;
 }
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -92,6 +88,9 @@ main img{
 /* estilização de produtos */
 .produtos{
     text-align: center;
+    /*--------*/
+    height: 70vh;
+    border: solid; 
 }
 .produtos>h1{
     margin: 20px;
@@ -102,6 +101,7 @@ main img{
 .produtos-card{
     margin: auto;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 80vw;
@@ -131,4 +131,240 @@ main img{
 .btn-pc-card:hover{
     background-color: #6320EE;
 }
- master
+
+/*=metodo-de-trabalho*/
+
+.metodo-trabalho{
+    height: 50vh;
+    border: solid powderblue;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#nossa-vagas{
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+    width: 80vw;
+    text-align: center;
+    
+}
+
+.icons ul{
+    display: flex;
+    gap: 10em;
+    list-style: none; 
+}
+
+.icons img{
+    height: 70px;
+}
+
+/*Efeito zoom*/
+
+#developer{
+    max-width: 100%;
+    -moz-transition: all 0.35;
+    -webkit-transition: all 0.35;
+    transition: all 0.35;
+}
+
+#developer:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1);
+}
+
+#tester{
+    max-width: 100%;
+    -moz-transition: all 0.35;
+    -webkit-transition: all 0.35;
+    transition: all 0.35;
+}
+
+#tester:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1);
+}
+
+#design{
+    max-width: 100%;
+    -moz-transition: all 0.35;
+    -webkit-transition: all 0.35;
+    transition: all 0.35;
+}
+
+#design:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1);
+}
+/*======================================*/
+.profissoes{
+    margin-top: 30px;
+}
+
+/*trabalhe conosco*/
+
+.trabalhe-conosco{
+    height: 70vh;
+    border: #e42107 3px solid;
+    
+}
+
+.trabalhe-conosco h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.trabalhe-conosco h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+
+.enviar-candidatura{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 3%;
+    gap: 10px;
+}
+
+#nome{
+    height: 40px;
+    text-align: center;
+
+}
+
+#email{
+    height: 40px;
+    text-align: center;
+
+}
+
+#celular{
+    height: 40px;
+    text-align: center;
+
+}
+
+#vaga{
+    height: 40px;
+    text-align: center;
+
+}
+
+#botaoenviar{
+    padding-left: 9%;
+    display: flex;
+    margin-top: 4%;
+    margin-left: 34%;
+    border:none;
+    height: 4em;
+    width: 15rem;
+    border-radius: 10px; 
+} 
+
+/*metodo de trabalho responsivo*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .metodo-trabalho{
+        height: 100vh;
+        width: 130%;
+    }
+    .informacoes p{
+        display: flex;
+        padding: 2em;
+        margin: 1em;  
+    }
+
+    .trabalhe-conosco{
+        height: 100vh;
+        width: 130%;
+    }
+
+    .icons ul{
+        display: flex;
+        width: 0.5em;
+        gap: 7em;
+        justify-content: center;
+        margin-right: 2em;
+    }
+
+    .profissoes{
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .trabalhe-conosco h4{
+        display: flex;
+        font-size: 1em;
+        margin-left: 5rem;
+
+    }
+
+    #boasorte{
+        display: flex;
+        margin-top: 3em;
+        padding-right: 3em;        
+    }
+
+    .enviar-candidatura{
+        display: flex;
+        align-items: center;
+        margin-top: 2em;
+        gap: 1em;
+    }
+
+    #nome{
+        width: 20rem;
+
+    }
+
+    #email{
+        width: 20rem;
+
+    }
+
+    #celular{
+        width: 20rem;
+
+    }
+
+    #vaga{
+        width: 20rem;
+
+    }
+
+    #botaoenviar{
+        width: 13rem;
+        height:3rem ;
+        display: flex;
+        position: relative;
+        right: 2em;
+        padding-left: 4em;
+    }
+
+
+
+}
+
+    
+
+
+
+
+
+    

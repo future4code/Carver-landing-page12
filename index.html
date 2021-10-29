@@ -1,12 +1,9 @@
-
-master
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>upfor.</title>
 </head>
@@ -15,9 +12,10 @@ master
         <nav>
             <ul class="nav-bar">
                 <li id="somos"><a href="#quemsomos">QUEM SOMOS</a></li>
-                <li id="produtos"><a href="#">SERVIÇOS</a></li>
+                <li id="produtos"><a href="#servicos">SERVIÇOS</a></li>
+                <li id="trabalhe"><a href="#trabalheconosco">TRABALHE CONOSCO</a></li>
                 <li id="contatos"><a href="#">CONTATOS</a></li>
-                <li id="trabalheconosco"><a href="#">TRABALHE CONOSCO</a></li>
+              
             </ul>
         </nav>
     </header>
@@ -46,21 +44,13 @@ master
                 </p>
                    <h4>Clique no botão abaixo e de um start na sua vida empresarial.</h4>    
                 <div class="botoes">
-                    <button>Conheça nossas propostas</button>
+                   <a href="#servicos"><button>Conheça nossas propostas</button></a>
                 </div>
              </div>
              <div class="parterosa"> 
             </div>
         </section>
-
-    <link rel="stylesheet" href="style.css">
-    <title>UpfOR</title>
-</head>
-<body>
-    <main>
-     
-
-        <section>
+        <section id="servicos">
             <div class="produtos">
                 <h1>UpFor - Confiança que dá certo</h1>
                 <p>Acreditamos que novas ideias podem mudar vidas para melhor e fazemos de tudo para que você possa realizar o seu sonho! Agende uma entrevista para apresentar sua ideia e juntos iremos conseguir.</p>
@@ -88,11 +78,54 @@ master
             </div>
         </section>
 
+
+        <div class="metodo-trabalho"  id="trabalheconosco">
+            <div class="informacoes">
+            <h1>Trabalhe conosco</h1>
+            <h2>Como é trabalhar na empresa?</h2>
+            <p>Valorizamos a diversidade e o respeito acima de tudo,temos um dever com quem contratamos.
+                <br>
+             valorizar os aprendizados e a trajetória que cada um possui,e claro um método de trabalho 100% online.
+                <br>
+            </p>
+            <h4>venha fazer parte dessa equipe!</h4>
+            <h2 id="nossa-vagas">Nossas vagas</h2>
+            <div class="icons">
+                <ul>
+                    <li id="developer"><img src="./img/tag.png" alt=""></li>
+                    <li id="tester"><img src="./img/tester.png" alt=""></li>
+                    <li id="design"><img src="./img/design.png" alt=""></li>
+                </ul>
+                <ul class="profissoes">
+                    <li>Developer</li>
+                    <li>Tester</li>
+                    <li>Web Design</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="trabalhe-conosco">
+            <h1>Quero me candidatar!</h1>
+            <h4>Por favor, preencha suas informações.
+                Em breve entraremos em contato.
+            </h4>
+            <h4 id="boasorte">Boa sorte!</h4>
+            <form action="">
+                <div class="enviar-candidatura"> 
+                    <label for=""></label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                    <label for="nome"></label>
+                    <input type="email" name="" id="email" placeholder="Email para contato">
+                    <label for="email"></label>
+                    <input type="text" name="" id="celular" placeholder="Telefone(celular)">
+                    <label for="vagas"></label>
+                    <input type="text" name="" id="vaga" placeholder="Diga a vaga que deseja se candidatar">
+                     <input id="botaoenviar" type="button" value="Enviar candidatura">                    
+                </div>
+            </form>
+        </div>
         <footer>
-
         </footer>
-
- master
     </main>
 </body>
 </html>
