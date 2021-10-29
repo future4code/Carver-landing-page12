@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
 }
-
-
 nav{
-    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    height: 10vh;
     background-color:rgb(218, 171, 171) ;
+}
+
+nav>img{
+    height: 10vh;
 }
 
 .nav-bar{
@@ -21,26 +25,26 @@ nav{
 .nav-bar a{
     text-decoration: none;
 }
+.nav-bar>a:active{
+    color: black;
+    text-decoration: none;
+}
 
-/* main{
-    display: flex;
     height: 88vh;
     width: 97vw;
     justify-content: center; 
 } */
 
-/* main img{
+.principal{
     display: flex;
-    width: 98vw;
-    height: 88vh;
-} */
-
+    justify-content: space-between;
+}
 .pagina{
     display: flex;
     position: relative;
     border: solid;
     height: 88vh;
-    width: 50vw;
+    width: 40vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -50,6 +54,10 @@ nav{
 
 .pagina  h1{
     font-size: 4em;
+}
+#quemsomos{
+    display: flex;
+    align-items: center;
 }
 
 .botoes{
@@ -62,41 +70,40 @@ nav{
     width: 15rem;
     border-radius: 10px;
 }
-
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-   body{
-       width: 100vw;
-   }
-
    .pagina{
        height: 70vh;
        width: 76vw;
        font-size: 1rem;
        gap: 6em;
-   }
-
-   .nav-bar{
-       display: flex;
-       font-size: 14px;
-       gap: 7px;
-       justify-content: center;
-   }
 }
-
-
 
 /* estilização de produtos */
 .produtos{
+    margin: auto;
+
     text-align: center;
+
     /*--------*/
     height: 70vh;
     border: solid; 
+
+   align-content: center;    
+
 }
-.produtos>h1{
-    margin: 20px;
+.intro{
+    display: flex;
+    margin-top: 3vh;
+    width: 80vw;
+    justify-content: space-evenly;
 }
-.produtos>p{
+
+.intro>p{
+    margin-top: 6vh;
+    width: 20vw;
     margin-bottom: 50px;
+}
+.intro>img{
+    width: 10vw;
 }
 .produtos-card{
     margin: auto;
@@ -105,6 +112,9 @@ nav{
     flex-direction: column;
     align-items: center;
     width: 80vw;
+}
+.produtos-card>p{
+    margin-top: 5vw;
 }
 .produtos-card>p{
     margin-bottom: 20px;
@@ -119,8 +129,12 @@ nav{
     display: flex;
     align-items: center;
 }
+.img-cc-conteudo{
+    width: 5vw;
+    
+}
 .cc-conteudo{
-    height: 5vw;
+    height: 10vw;
 }
 .btn-pc-card{
     margin: auto;
@@ -131,6 +145,7 @@ nav{
 .btn-pc-card:hover{
     background-color: #6320EE;
 }
+
 
 /*=metodo-de-trabalho*/
 
@@ -152,7 +167,6 @@ nav{
     border-bottom: 2px solid gray;
     width: 80vw;
     text-align: center;
-    
 }
 
 .icons ul{
@@ -205,7 +219,7 @@ nav{
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
 }
-/*======================================*/
+
 .profissoes{
     margin-top: 30px;
 }
@@ -243,25 +257,21 @@ nav{
 #nome{
     height: 40px;
     text-align: center;
-
 }
 
 #email{
     height: 40px;
     text-align: center;
-
 }
 
 #celular{
     height: 40px;
     text-align: center;
-
 }
 
 #vaga{
     height: 40px;
     text-align: center;
-
 }
 
 #botaoenviar{
@@ -312,7 +322,6 @@ nav{
         display: flex;
         font-size: 1em;
         margin-left: 5rem;
-
     }
 
     #boasorte{
@@ -330,22 +339,18 @@ nav{
 
     #nome{
         width: 20rem;
-
     }
 
     #email{
         width: 20rem;
-
     }
 
     #celular{
         width: 20rem;
-
     }
 
     #vaga{
         width: 20rem;
-
     }
 
     #botaoenviar{
@@ -356,15 +361,176 @@ nav{
         right: 2em;
         padding-left: 4em;
     }
+}
+    
+=======
+/* estilização footer */
+footer{
+    margin-top: 8vh;
+}
+#main-footer{
+    background-color: #D2C2B088;
+    padding-top: 3vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15vw;
+    width: 80vw;
+}
+.footer-conteudo{
 
-
-
+}__
+.social-img>a>img{
+    width: 3vw;
+}
+.social-img>a>img:hover{
+    background-color: #D2C2B0;
+}
+.parceria{
+    text-align: center;
+}
+.parceria>a>img{
+    width: 10vw;
+}
+.parceria>a>img:hover{
+    background-color: #D2C2B0;
+    list-style: none;
 }
 
+@media screen and (max-device-width: 375px) {
+    section{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        width: 100vw;
+    }
+    #resp-img{
+        width: 100vw;
+    }
+    .pagina{
+        height: 70vh;
+        width: 76vw;
+        font-size: 1rem;
+        gap: 6em;
+    }
+    nav{    
+        width: 100vw;
+        height: 12vh;
+    }
+    nav>img{
+        height: 10vh;
+        height: 12vh;
+    }
+    nav>ul{
+        width: 60vw;
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        padding: 2%;
+        text-align: center;
+    }
+    .principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .parterosa{
+        background-color: pink;
+        margin: auto;
+        height: 3vh;
+        width: 100vw;
+    }
+
+    /* estilização produtos */
+    .produtos{
+        margin: auto;
+        margin
+        width: 100vw;
+        text-align: center;
+        align-content: center;    
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .intro>p{
+        width: 100vw;
+    }
+    .intro>img{
+        width: 25vw;
+    }
+
+    .produtos-card{
+        display: flex;
+        flex-direction: column;
+        height:65vh;
+    }
+    .pc-conteudo{
+        display: flex;
+        flex-direction: column;
+     }
+    .cc-conteudo{
+        height: 30vh;
+    }
+    .credito-card{
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+
+    }
+    .img-cc-conteudo{
+        width: 25vw;
+    }
+    .btn-pc-card{
+        width: 30vw;
+    }
+    /* estilização footer */
+    footer{
+        margin-top: 8vh;
+    }
+    #main-footer{
+        background-color: #D2C2B088;
+        padding-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15vw;
+        width: 80vw;
+    }
+    .footer-conteudo{
+        text-align: center;
+    }
+    .social-img{
+        text-align: center;
+    }
+    .social-img>a>img{
+        width: 15vw;
+    }
+    .social-img>a>img:hover{
+        background-color: #D2C2B0;
+    }
+    .parceria{
+        text-align: center;
+    }
+    .parceria>a>img{
+        width: 50vw;
+    }
+    .parceria>a>img:hover{
+        background-color: #D2C2B0;
+        list-style: none;
+    }
     
+}
 
-
-
-
-
-    
