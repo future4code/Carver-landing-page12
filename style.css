@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 nav{
     height: 100px;
     background-color:rgb(218, 171, 171) ;
@@ -87,3 +88,47 @@ main img{
 }
 
 
+
+/* estilização de produtos */
+.produtos{
+    text-align: center;
+}
+.produtos>h1{
+    margin: 20px;
+}
+.produtos>p{
+    margin-bottom: 50px;
+}
+.produtos-card{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+}
+.produtos-card>p{
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+    width: 80vw;
+}
+.pc-conteudo{
+    display: flex;
+    align-items: center;
+}
+.credito-card{
+    display: flex;
+    align-items: center;
+}
+.cc-conteudo{
+    height: 5vw;
+}
+.btn-pc-card{
+    margin: auto;
+    width: 10vw;
+    border-radius: 4px;
+    background-color: #55868C;
+}
+.btn-pc-card:hover{
+    background-color: #6320EE;
+}
+ master
