@@ -6,13 +6,12 @@ nav{
     display: grid;
     grid-template-columns: 1fr 10fr;
     height: 10vh;
-    background-color:rgb(218, 171, 171) ;
+    background-color:#232ED1cc;
 }
 
 nav>img{
     height: 10vh;
 }
-
 .nav-bar{
     display: flex;
     justify-content: center;
@@ -20,6 +19,9 @@ nav>img{
     padding: 40px;
     gap: 90px;   
     list-style: none;
+}
+.nav-bar>li>a{
+    color: blanchedalmond;
 }
 
 .nav-bar a{
@@ -30,34 +32,20 @@ nav>img{
     text-decoration: none;
 }
 
-    height: 88vh;
-    width: 97vw;
-    justify-content: center; 
-} */
-
 .principal{
     display: flex;
-    justify-content: space-between;
-}
-.pagina{
-    display: flex;
-    position: relative;
-    border: solid;
-    height: 88vh;
-    width: 40vw;
-    flex-direction: column;
-    justify-content: center;
+    width: 100vw;
     align-items: center;
-    gap: 70px;
-    margin-left: 27%;
+    border-bottom: 2px solid gray;
+    
 }
 
-.pagina  h1{
-    font-size: 4em;
-}
 #quemsomos{
     display: flex;
     align-items: center;
+    width: 33vw;
+    height: 40vh;
+
 }
 
 .botoes{
@@ -70,30 +58,26 @@ nav>img{
     width: 15rem;
     border-radius: 10px;
 }
-   .pagina{
-       height: 70vh;
-       width: 76vw;
+.pagina{
+       height:40vh;
+       width: 30vw;
        font-size: 1rem;
        gap: 6em;
+       text-align: center;
 }
 
 /* estilização de produtos */
 .produtos{
     margin: auto;
-
     text-align: center;
-
-    /*--------*/
-    height: 70vh;
-    border: solid; 
-
-   align-content: center;    
-
+    height: 60vh;
+    align-content: center;    
+    background-color: #AFB3B433;;
 }
 .intro{
     display: flex;
     margin-top: 3vh;
-    width: 80vw;
+    width: 100vw;
     justify-content: space-evenly;
 }
 
@@ -111,7 +95,8 @@ nav>img{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 80vw;
+    width: 100vw;
+    
 }
 .produtos-card>p{
     margin-top: 5vw;
@@ -119,7 +104,7 @@ nav>img{
 .produtos-card>p{
     margin-bottom: 20px;
     border-bottom: 2px solid gray;
-    width: 80vw;
+    width: 100vw;
 }
 .pc-conteudo{
     display: flex;
@@ -127,6 +112,7 @@ nav>img{
 }
 .credito-card{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .img-cc-conteudo{
@@ -151,7 +137,6 @@ nav>img{
 
 .metodo-trabalho{
     height: 50vh;
-    border: solid powderblue;
 }
 
 .informacoes{
@@ -165,7 +150,7 @@ nav>img{
 #nossa-vagas{
     margin-bottom: 20px;
     border-bottom: 2px solid gray;
-    width: 80vw;
+    width: 100vw;
     text-align: center;
 }
 
@@ -173,10 +158,11 @@ nav>img{
     display: flex;
     gap: 10em;
     list-style: none; 
+    justify-content: center;
 }
 
 .icons img{
-    height: 70px;
+    height: 5vw;
 }
 
 /*Efeito zoom*/
@@ -193,6 +179,7 @@ nav>img{
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
 }
+
 
 #tester{
     max-width: 100%;
@@ -222,13 +209,13 @@ nav>img{
 
 .profissoes{
     margin-top: 30px;
+    justify-content: space-between;
 }
-
 /*trabalhe conosco*/
 
 .trabalhe-conosco{
     height: 70vh;
-    border: #e42107 3px solid;
+
     
 }
 
@@ -291,7 +278,7 @@ nav>img{
 
     .metodo-trabalho{
         height: 100vh;
-        width: 130%;
+        width: 100%;
     }
     .informacoes p{
         display: flex;
@@ -301,22 +288,29 @@ nav>img{
 
     .trabalhe-conosco{
         height: 100vh;
-        width: 130%;
+        width: 100%;
     }
 
     .icons ul{
         display: flex;
-        width: 0.5em;
         gap: 7em;
-        justify-content: center;
+        /* justify-content: center; */
         margin-right: 2em;
+    }    
+    .icons img{
+        height: 10vw;
     }
-
     .profissoes{
         display: flex;
+        width: 100vw;
         align-items: center;
-        margin-left: 1rem;
+         /* margin-left: 1rem; */
     }
+    .profissoes>li{
+    margin-left: -10vw;
+
+    }
+
 
     .trabalhe-conosco h4{
         display: flex;
@@ -362,8 +356,6 @@ nav>img{
         padding-left: 4em;
     }
 }
-    
-=======
 /* estilização footer */
 footer{
     margin-top: 8vh;
@@ -375,11 +367,11 @@ footer{
     display: flex;
     justify-content: space-between;
     gap: 15vw;
-    width: 80vw;
+    width: 100vw;
 }
 .footer-conteudo{
 
-}__
+}
 .social-img>a>img{
     width: 3vw;
 }
@@ -409,10 +401,14 @@ footer{
         width: 100vw;
     }
     .pagina{
-        height: 70vh;
-        width: 76vw;
+        /* height: 70vh; */
+        width: 100vw;
         font-size: 1rem;
-        gap: 6em;
+    }
+    #quemsomos{
+        width: 100vw;
+        height: 68vh;
+        align-items: flex-start;
     }
     nav{    
         width: 100vw;
@@ -432,7 +428,7 @@ footer{
         gap: 2px;
         justify-content: center;
         align-items: center;
-        width: 70vw;
+        width: 60vw;
         padding: 2%;
         text-align: center;
     }
@@ -440,22 +436,15 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-    }
-    .parterosa{
-        background-color: pink;
-        margin: auto;
-        height: 3vh;
-        width: 100vw;
     }
 
     /* estilização produtos */
     .produtos{
         margin: auto;
-        margin
         width: 100vw;
         text-align: center;
-        align-content: center;    
+        align-content: center;  
+        height: 120vh;  
     }
     .intro{
         display: flex;
@@ -507,7 +496,7 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         gap: 15vw;
-        width: 80vw;
+        width: 100vw;
     }
     .footer-conteudo{
         text-align: center;
@@ -533,4 +522,5 @@ footer{
     }
     
 }
+
 
